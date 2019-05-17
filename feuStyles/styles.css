@@ -1,0 +1,563 @@
+/* ABC chauffage Exercice de TP 
+au Centre Ifocop Eragny
+Css élaborer par Garmain alain le 12/04/2019 */
+
+/* ****************************** Css Doodle ********************************** */
+.fin{
+  margin-left: 15px;
+  color: #fff;
+}
+body{
+  height: 100vh;
+}
+
+
+
+
+/* ********************** Css du header + texte ******************************* */
+
+
+.teteFluid{
+  margin                 : 0;
+  padding                : 0;
+  background             : url(../images/header.jpg) no-repeat center center;
+  -webkit-background-size: 750px cover;
+  -moz-background-size   : cover;
+  -o-background-size     : cover;
+  background-size        : cover;
+  background-position    : fixed;
+  backdrop-filter        : brightness(60%);
+  height                 : 750px;
+}
+.container-fluid{
+  padding: 0;
+  margin: 0;
+}
+.contenu{
+  margin          : 0;
+  padding         : 0;
+  width           : 100%;
+  height          : 750px;
+  background-color: rgba(0, 0, 0, 0.418);
+}
+
+header{
+  min-height: 80px;
+}
+
+.navbar{
+    background-color: rgba(43, 61, 78, 0.369);
+  }
+.dropdown-menu{
+  background-color: rgba(245, 246, 250, 0.829);
+  width           : 350px;
+  display         : none;
+  position        : relative;
+  top             : 47px;
+  left            : -100px;
+  margin-right    : 8px;
+  border          : 1px solid rgba(245, 246, 250, 0.815);
+} 
+.dropdown-menu a{
+  width     : 100%;
+  padding   : 5px;
+  text-align: center;
+  font-size : 22px;
+  background: transparent;
+  transition: 0.5s;
+} 
+.dropdown-menu a:hover{
+  background-color: rgba(245, 246, 250, 0.671);
+  border-radius   : 4px;
+  color           : #000;
+}
+
+ .nav-link{
+   width: 140px;
+ }
+ .log{
+   position: relative;
+   right   : 50px;
+   width   : 140px;
+ }
+ .navbar li{
+  width: 120px;
+}
+.navbar li .nav-link{
+  text-align: center;
+  color     : #fff !important;
+}
+
+.a1{
+  color      : #fff;
+  font-weight: 400;
+  text-align : center;
+  position   : relative;
+  top        : 150px;
+}
+.accroche{
+  color    : #fff;
+  font-size: 26px;
+  position : relative;
+  top      : 210px;
+}
+
+/* ********************** Css du Corps + Ancres ******************************* */
+
+/* Les containers */
+.corps{
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  min-height          : 100px;
+}
+
+
+.subCorp{
+  padding-top: 30px;
+  background-color: #a5b1c2;
+  min-height      : 100px;
+  border-radius   : 20px 20px 0 0;
+  padding: 0;
+}
+
+.tt{
+  text-align: center; 
+  font-size: 60px;
+  padding: 90px;
+}
+/* .nowrap{
+  flex-wrap: nowrap;
+} */
+
+/* Les cartes des Services */
+.cdi1, .cdi2, .cdi3{
+  width        : 250px;
+  height       : 350px;
+  border       : 1px solid transparent;
+  border-radius: 8px;
+  transition: 0.5s;
+  margin: 0 auto;
+}
+
+
+.card{
+  border: 1px solid transparent;
+
+}
+.top0, .top1, .top2{
+  margin          : 40px auto;
+  border-radius   : 8px;
+  background-color: transparent;
+  border          : 1px solid transparent;
+  margin: 0 auto;
+}
+.carte{
+  width        : 250px;
+  height       : 350px;
+  text-align   : center;
+  border       : 1px solid transparent;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+.carte:hover{
+  background-color: rgba(0, 0, 0, 0.247);
+}
+
+.card-img:hover{
+  filter: blur('2px')
+}
+.carteTitre{
+  background-color: rgba(255, 255, 255, 0.918);
+  margin-bottom   : 0;
+  padding         : 10px 0;
+  color           : #000;
+  position        : absolute;
+  bottom          : 5px;
+  left            : 5px;
+  width           : 235px;
+  border-radius   : 8px;
+  display: none; 
+}
+
+.carteTitre a{
+  padding: 10px 0;
+  color  : #000;
+  border-radius: 8px;
+}
+
+.slogan0, .slogan1, .slogan2{
+  margin-top: 95px;
+  color: #fff;
+  display: none;
+}
+
+/* Css des article ABC chauffage */
+
+.passe{
+  margin-top: 110px;
+  padding-bottom: 150px;
+  background-color: #f5f6fa;
+}
+
+.article{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+  margin: 0 auto;
+  min-height: 300px;
+ 
+}
+.g1,.g2,.g3,.g4{
+  display: flex;
+  height: 250px;
+  width: 960px;
+  margin: 15px auto;
+  
+}
+
+.titreArticle{
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 50px;
+
+}
+.imgArticle{
+  display: block;
+  margin: 10px;
+  align-self: center;
+}
+.textArticle{
+  font-size: 18px;
+  align-self: center;
+}
+.art1, .art3{
+  order: 1
+}
+.g1,.g2,.g3,.g4{
+  display: flex;
+  border-radius: 4px;
+}
+
+/* Css actu et avis */
+
+.actuAvis{
+  min-height: 500px;
+  padding-top: 90px;
+  padding-bottom: 150px;
+}
+
+.courbe{
+  margin: 0 auto !important;
+}
+.Courbe{
+  padding: 150px auto;
+  background-color: #f5f6fa;
+}
+
+/******************** Css de la page catalogue *************************/
+.catalogue{
+  margin: 0 auto;
+  width: 900px;
+}
+.card{
+  width: 100%;
+  margin: 0 ;
+}
+.catArticle1,.catArticle{
+  width: 100%;
+  border-radius: 15px;
+}
+.catTitre{
+  text-align: center;
+ padding-top: 110px;
+  margin: 120px auto;
+}
+.catList li{
+  border: transparent;
+}
+
+.valide{
+ background-color: #4082e6cb;
+}
+
+.valide:hover{
+ background-color: #4082e6;
+}
+.fichTech{
+  background-color:#73df7ccb
+}
+.fichTech:hover{
+  background-color:#42f751ed
+}
+
+.valide a,
+.fichTech a{
+  text-decoration: none;
+  color: black;
+}
+
+.catImag1,.catImag{
+  padding-top: 70px;
+}
+
+
+
+
+/* ***************** Css de la page Intervention.html *************** */
+.tt1{
+  text-align: center;
+  font-size: 70px;
+  padding: 90px;
+}
+.forml{
+  margin: 0 auto;
+  padding: 50px;
+  
+}
+.formule{
+  margin: 0 auto;
+  border-radius: 30px !important;
+  background-color: rgba(255, 255, 255, 0.63) !important;
+  
+}
+.bout{
+  margin: 90px 0 90px 0;
+}
+.sub{
+  display: flex;
+  justify-content: center;
+}
+.interv{
+  background-color: transparent;
+  padding-bottom: 90px;
+}
+
+
+/* *********************** Css des photo en background ************************* */
+
+.camion{
+  width: 100%;
+  height: 625px;
+  z-index: -30;
+  position: absolute;
+  top:1321px
+}
+.instal{
+  z-index: -30;
+  width: 420px;
+  position: absolute;
+  top: 2300px;
+  right: 0;
+
+}
+.fioul3{
+  z-index: -30;
+  width: 420px;
+  position: absolute;
+  top: 2550px;
+  left: 0;
+}
+.reparateur{
+  width: 100%;
+  height: 525px;
+  z-index: -30;
+  position: absolute;
+  top:3018px
+}
+
+
+/* ****************************** Css de la page devisfioul.html  ************************************ */
+.formfioul,.totalfioul{
+  margin: 0 auto
+}
+
+  
+  .formulaire{
+    background-color: #fff;
+  }
+
+
+  hr{
+      width: 680px;
+      border: 2px;
+      border-top: 1px solid rgba(0, 0, 0);
+  }
+  .postal{
+    text-align: center;
+  }
+  span{
+    display: inline;
+  }
+  .recap{
+    margin: 50px auto;;
+  }
+  .live{
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+    border: 1px solid #000;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-left: 40px;
+    align-items: center;
+  }
+  .live p{
+    margin-bottom: 0;
+  }
+  .icamion{
+    font-size: 70px;
+  }
+  .l1,.l2{
+    width: 220px;
+    border: none;
+    border-bottom-left-radius: 4px solid #e55039;
+  }
+  .l0{
+    background: linear-gradient(120deg,#e55039, #5d77df); 
+    border-radius: 6px;
+    padding: 10px;
+  }
+  .ul0{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .T1{
+    width: 550px;
+  }
+  .bouton{
+    width: 100%;
+    margin: 50px auto;
+  }
+  
+/* ********************** Css du Footer + Liens ******************************* */
+.piedPage{
+  clear: both;
+  background-color: #2c3e50;
+  padding         : 0;
+  min-height: 500px;
+}
+article{
+  margin-top: 25px;
+}
+address{
+  text-align: center;
+}
+address a {
+  text-align: center;
+}
+.liens{
+  justify-content: space-around;
+  border-bottom  : 0.5px solid rgba(255, 255, 255, 0.267)
+}
+.lien{
+  text-align: center;
+  margin    : 15px 0 15px 0;
+}
+.lien a{
+  text-decoration: none;
+  color          : #fff;
+  padding        : 8px;
+  transition     : 0.5s;
+}
+.lien a:hover{
+  background-color: rgba(245, 246, 250, 0.671);
+  color           : #000;
+  border-radius   : 4px;
+}
+.add{
+  margin-bottom: 3px;
+}
+.list-group-item{
+  background-color: transparent;
+}
+.list-group-item-action{
+  transition: 0.3s;
+  
+  
+}
+.list-group-item-action:hover{
+  border-radius   : 4px;
+  background-color: rgba(245, 246, 250, 0.671);
+  color           : #000;
+}
+
+/* icons sociaux */
+.fab{
+  font-size: 70px;
+}
+.social span{
+  display   : block;
+  text-align: center;
+}
+.social{
+  display        : flex;
+  flex-wrap      : nowrap;
+  margin-top     : 50px;
+  margin-bottom  : 50px;
+  justify-content: space-around;
+}
+/* rappel automatique */
+.rappel{
+  background-color: #f5f6fa;
+  height          : 90px;
+  text-align      : center;
+  margin          : 0;
+  padding         : 35px;
+  display         : none;
+}
+.rappel a{
+  text-decoration: none;
+  vertical-align : center;
+  color          : #e55039;
+  border         : 1px solid #e55039;
+  border-radius  : 4px;
+  padding        : 10px;
+  margin         : 0;
+}
+.fade{
+  margin: 0;
+  padding: 200px 0 0 0;
+}
+.btn-amoi{
+  background-color: #4082e6cb;
+}
+.btn-amoi:hover{
+  background-color: #4082e6;
+}
+
+/* ******************** page de Qui Sommes nous ************************************** */
+.galerie{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 350px;
+  margin: 90px auto;
+  justify-content: space-between;
+}
+.galerie img{
+  display: block;
+  margin: 45px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+.nous{
+  text-align: center;
+  font-size: 90px;
+}
+.mage1,
+.mage2,
+.mage3,
+.mage4,
+.mage5{
+  position:relative;
+  height: 250px;
+  width: 300px;
+}
+.mage1,.mage3,.mage5{
+  top: 35px
+}
+
+
+ 

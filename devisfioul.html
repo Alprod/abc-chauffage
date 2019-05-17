@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./feuStyles/styles.css">
+  <link rel="stylesheet" href="./feuStyles/responsive.css">
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+  <script src="./bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <title>ABC Chauffage</title>
+
+  <style>
+    
+  .teteFluid{
+    margin                 : 0;
+    padding                : 0;
+    background             : url(./images/camFioul.jpg) no-repeat center center;
+    -webkit-background-size: 550px cover;
+    -moz-background-size   : cover;
+    -o-background-size     : cover;
+    background-size        : cover;
+    background-position    : fixed;
+    backdrop-filter        : brightness(60%);
+    height                 : 750px;
+  }
+ 
+  
+  </style>
+
+</head>
+
+<body>
+    
+  <!-- -------------------- HEADER ----------------------- -->
+
+  <!-- ----------------- La barre de Navigation   ------------------- -->
+      <div class="container-fluid teteFluid ">
+        <div class="contenu">
+        <header class="hfixe">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <button class="navbar-toggler Togg" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon Togg1"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse justify-content-md-center" id="navigation">
+                  <ul class="navbar-nav" id="navBarre"></ul>
+                </div>
+              </nav>
+        
+            </header>
+  <!-- --------------------  Titre + Slogan ----------------------- -->
+        <div class="container">
+          <h1 class="display-3 a1">ABC Chauffage</h1>
+          <p class="text-center lead accroche">
+            Depuis 1996, notre société met au service des professionnels et des particuliers son savoir-faire et son expertise 
+            dans des domaines d'activité varié et divers :
+            travaux de chauffage, de plomberie, de tout type de chaudiére,Implantée à Eragny, dans le département du Val d'oise,<br /> 
+            notre équipe vous propose des services de qualité.
+          </p>
+        </div>
+      </div>
+      </div>
+<!-- -------------------- Contenu du site ----------------------- -->
+
+
+
+
+<div class="ancre"></div>
+
+
+  
+
+<div class="container-fluid corps">
+  
+
+  <div class="container formulaire">
+    <form action="get" id="formlFioul" class="">
+      <h1 class="display-4 pt-5 ml-5 mb-5 titreFioul">Votre Commande de fioul</h1>
+      <div class="row">
+
+  <!-- ------------------------ Formulaire du fioul----------------------------------- -->
+        
+          <div class="col-lg-8 col-md-8 col-sm-12 formfioul">
+              <h2 class="h4 ml-5 mb-2 t">Votre commande en ligne</h2>
+              <hr>
+            <div class="row">
+              
+          <!-- Formaulaire de gauche -->
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                 
+                    <!-- Code postal -->
+                      <div class="form-group row">
+                          <label for="codePostal" class="col-3 col-md-4 col-sm-4 ml-2 col-form-label col-form-label-sm postal">Code postal</label>
+                          <div class="col-6 col-md-6 col-sm-6">
+                            <input type="text" class="form-control  form-control-sm" pattern="" maxlength="5" id="codePostal">
+                            <div class="invalid-feedback postPostal">
+                              Veuillez inscrire le code postal souhaitez 
+                              </div>
+                          </div>
+                        </div>
+                        <!-- Quantité en fioul -->
+                        <div class="form-group row">
+                            <label for="quantiter" class="col-2 col-md-2 col-sm-2 ml-5 col-form-label col-form-label-sm postal">Quantité</label>
+                            <div class="col-6 col-md-6 col-sm-6">
+                              <input type="text" class="form-control  form-control-sm" id="quantiter" placeholder="Litres" required>
+                              <div class="invalid-feedback postQuant">
+                                  Veuillez inscrire la quantité souhaitez 
+                                </div>
+                            </div>
+                          </div>
+                          <!-- Type de fioul -->
+                          <div class="form-group row">
+                            <label for="produit" class="col-2 col-md-2 col-sm-2 ml-5 col-form-label col-form-label-sm postal">Produit</label>
+                          <div class="col-6 col-md-6 col-sm-6">
+                            <select class="custom-select custom-select-sm" name="" id="selection">
+                              <option value="1" selected>...</option>
+                              <option value="1">Fioul ordinaire</option>
+                              <option value="2">Fioul Superieur</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Veuillez faire votre séléction
+                              </div>
+                          </div>
+                        </div>
+                        <!-- Info complementaire -->
+                        <div class="form-group">
+                            <label class="ml-2 info1 col-6 col-md-6 col-sm-6" for="areaComplet">Information complémentaire</label>
+                            <textarea class="form-control ml-1 info" id="areaComplet" rows="3"></textarea>
+                          </div>
+                
+              </div>
+              
+          <!-- Formulaire de droite -->
+              <div class="col-lg-6 col-md-12 col-sm-12">
+
+                 
+                      <!-- Nom -->
+                        <div class="form-group row">
+                            <label for="name" class="col-2 col-md-2 col-sm-2 ml-5 col-form-label col-form-label-sm postal">Nom</label>
+                            <div class="col-6 col-md-6 col-sm-6">
+                              <input type="text" class="form-control  form-control-sm" id="name" required>
+                              <div class="invalid-feedback postNom">
+                                  Veuillez inscrire votre nom
+                                </div>
+                            </div>
+                          </div>
+                          <!-- Prenom -->
+                          <div class="form-group row">
+                              <label for="prenom" class="col-2 col-md-2 col-sm-2 ml-5 col-form-label col-form-label-sm postal">Prénom</label>
+                              <div class="col-6 col-md-6 col-sm-6">
+                                <input type="text" class="form-control  form-control-sm" id="prenom" required>
+                                <div class="invalid-feedback postPrenom">
+                                    Veuillez inscrire votre Prénom
+                                  </div>
+                              </div>
+                            </div>
+                            <!-- Téléphone -->
+                            <div class="form-group row">
+                              <label for="telephone" class="col-2 col-md-2 col-sm-2 ml-5 col-form-label col-form-label-sm postal">Tel</label>
+                            <div class="col-6 col-md-6 col-sm-6">
+                              <input type="tel" class="form-control  form-control-sm" id="telephone" required>
+                              <div class="invalid-feedback postTele">
+                                  Veuillez inscrire votre téléphone
+                                </div>
+                            </div>
+                          </div>
+                          <!-- adresse -->
+                          <div class="form-group row">
+                              <label for="adresse" class="col-2 col-md-2 col-sm-2 ml-5 col-form-label col-form-label-sm postal">adresse</label>
+                            <div class="col-6 col-md-6 col-sm-6">
+                              <input type="text" class="form-control  form-control-sm" id="adresse" required>
+                              <div class="invalid-feedback postAdress">
+                                  Veuillez inscrire votre adresse
+                                </div>
+                            </div>
+                          </div>
+                          <!-- Email -->
+                          <div class="form-group row">
+                              <label for="email" class="col-2 col-md-2 col-sm-2 ml-5 col-form-label col-form-label-sm postal">Email</label>
+                            <div class="col-6 col-md-6 col-sm-6">
+                              <input type="email" class="form-control  form-control-sm" id="email" required>
+                              <div class="invalid-feedback postMail">
+                                  Veuillez inscrire votre Email
+                                </div>
+                            </div>
+                          </div>
+                          <!-- Société -->
+                          <div class="form-group row">
+                              <label for="société" class="col-2 col-md-2 col-sm-2 ml-5 col-form-label col-form-label-sm postal">Société</label>
+                            <div class="col-6 col-md-6 col-sm-6">
+                              <input type="text" class="form-control  form-control-sm" id="societe" required>
+                              <div class="invalid-feedback postSoc">
+                                  Veuillez inscrire votre Société
+                                </div>
+                            </div>
+                          </div>
+                    
+              </div>
+            </div>
+
+    <!-- ------------------ methode de livraison---------------------------------- -->
+            <div class="row">
+                <h2 class="h4 ml-5 mb-2">Choisir votre type de livraison</h2>
+                <hr>
+                <div class="d-block my-3">
+                  <div class="custom-control custom-radio live">
+                    <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                    <label class="custom-control-label ckbox" for="credit">Livraison standard</label>
+                    <p class="text-muted">sous 5 jours</p>
+                    <i class="fas fa-truck"></i>
+                  </div>
+                  <div class="custom-control custom-radio live">
+                    <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                    <label class="custom-control-label ckbox" for="debit">livraison rapide</label>
+                    <p class="text-muted ml-3">sous 3 jours</p>
+                    <i class="fas fa-truck"></i>
+                  </div>
+                  <div class="custom-control custom-radio live">
+                    <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                    <label class="custom-control-label ckbox" for="paypal">Livraison express</label>
+                    <p class="text-muted">sous les 24h</p>
+                    <i class="fas fa-truck"></i>
+                  </div>
+                </div>
+                    
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-8 col-sm-12 totalfioul">
+              <div class="card mb-3">
+                  <img src="./images/camFioul.jpg" class="card-img-top" alt="camion citerne">
+                  <div class="card-body">
+                    <h5 class="card-title h3 text-center l0">Recap fioul</h5>
+                    <ul class="list-group card-text">
+                        <li class="list-group-item l1">Code postal : <span id="cpost1"></span></li>
+                        <li class="list-group-item l1">Quantité : <span id="qtit1"></span>l</li>
+                        <li class="list-group-item l1">produit : <span id="prod1"></span></li>
+                        <li class="list-group-item l1">Livraison : <span id="livr"></span></li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="container Courbe">
+                    <div class="container-fluid">
+                        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4 courbe">
+                            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                              <h1 class="h2">Cours du gaz</h1>
+                            </div>
+                      
+                            <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>     
+                    </div>
+                  </div>
+          </div>
+      </div>
+      
+        <div class="row">
+          <div class="col-lg-12 col-md-8 col-sm-12 recap">
+              <div class="card mb-3">
+                  <div class="card-body">
+                    <h5 class="card-title h2 text-center l0">Total</h5>
+                    <div class="ul0">
+                        <p class="l2">Code postal : <span id="cpost"></span></p>
+                        <p class="l2">Quantité : <span id="qtite"></span>l</p>
+                        <p class="l2">produit : <span id="prod"></span></p>
+                        <p class="l2">Livraison : <span id="livr"></span></p>
+                      </div>
+                      <div class="toto">
+                      <h4 class="h1 ml-1 T1">Total :<span class="result"></span></h4>
+                      <input class="btn btn-primary bouton" id='btnValide' type="submit" value="Validez">
+                    </div>
+                  </div>
+                </div>
+          </div>
+          </div>
+        </form>
+        </div>
+
+    
+
+    
+
+      
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- -------------------- Footer + liens ----------------------- -->
+<div class="container-fluid piedPage">
+  <div class="row liens">
+    <div class="col-lg-4 col-md-4 col-sm-12 lien"><a href="intervention.html" class="lead">Besoin d'aide</a></div>
+    <div class="col-lg-4 col-md-4 col-sm-12 lien"><a href="contact.html" class="lead">Contactez-nous</a></div>
+    <div class="col-lg-4 col-md-4 col-sm-12 lien"><a href="devis.html" class="lead">Demande de Devis</a></div>
+  </div>
+  <footer class="container">
+      <div class="social">
+        <span><i class="fab fa-facebook-square"></i></span>
+        <span><i class="fab fa-instagram"></i></span>
+        <span><i class="fab fa-twitter"></i></span>
+      </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <article>
+            <address>
+              <p class="lead add">ABC Chauffage</p>
+              <p class="lead add">Allé de la Rose</p>
+              <p class="lead add">95610 Eragny sur Oise</p>
+              <p class="lead add">Tel: 01 34 48 56 23</p>
+              <a href="mailto:abcchauffage@contact.fr">abcchauffeur@contavt.fr</a>
+            </address>
+          </article>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <ul class="list-group list-group-flush flush1" id="listfoot"></ul>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <ul class="list-group list-group-flush flush2" id="lisfoot"></ul>
+        </div>
+        <div class="row">
+            <p class="fin"> © Copyrigth 2019 - Germain alain </p> 
+            <p class="fin"> ® Tout droit Réserver</p>
+          </div>
+    </div>  
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">On Vous rappel</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Téléphone</label>
+                <input type="tel" class="form-control modalTel" id="modalTel" aria-describedby="modalHelp" pattern="(01|02|03|04|05|06|07|08|09)[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}" placeholder="Votre num">
+                <small id="modalHelp" class="form-text text-muted">Nous ne partagerons pas, votre numero de telephone.</small>
+              </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-amoi">Appeler</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rappel" id="rappel"><a href="#modal" data-toggle="modal" data-target="#modal">Rappel automatique</a></div>
+
+</div>
+
+  
+
+<script src="./Jscript/monQuery.js"></script>
+<script src="./Jscript/myScript.js"></script> 
+
+<script>
+
+
+
+
+
+</script>
+
+</body>
+</html>

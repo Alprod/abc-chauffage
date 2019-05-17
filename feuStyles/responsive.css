@@ -1,0 +1,256 @@
+
+
+/* Responsive iphone 5 */
+@media (min-width: 320px) {
+    /* responsive index */
+
+
+    /* header */
+    .a1{
+        font-size: 40px;
+        top: 80px;
+    }
+    .accroche{
+        font-size: 20px;
+        top: 180px;
+    }
+    .tt{
+        font-size: 40px;
+        padding: 60px;
+    }
+    .titreArticle{
+        font-size: 40px;
+        padding-top: 90px;
+    }
+    .log{
+        right: 20px;
+    }
+
+    /* image fond */
+    .camion,.instal,.fioul3,.reparateur{
+        display: none;
+    }
+    /* ABC chauffeur */
+    .imgArticle{
+        width:150px;
+    }
+    .g1,.g2,.g3,.g4{
+        display: flex;
+        flex-wrap: wrap;
+        width: 250px;
+        min-height: 500px;
+    }
+    .article{
+        display: block;
+        width: 250px;
+    }
+
+    /* Actualité et Avis */
+    .actuAvis{
+        display: block;
+    }
+    .media{
+        flex-wrap: wrap;
+    }
+    .avis{
+        display: block;
+        width:100%;
+    }
+/* page devisfioul.html */
+
+    .titreFioul{
+        font-size: 45px;
+        text-align: center;
+    }
+    hr{
+        width: 305px;
+    }
+    .live{
+        width:300px;
+        margin-left: 10px;
+    }
+    .info{
+        width: 300px;
+    }
+    .formFioul{
+        width: 310px;
+    }
+    .T1{
+        width: 250px;
+    }
+    
+    /* Css page intervention.html */
+    .tt1{
+        font-size: 45px;
+        padding: 20px;
+    }
+    .forml{
+        padding: 0;
+    }
+
+    /* Css catalogue plombier */
+    .catalogue{
+        width: 300px;
+    }
+    .catTitre{
+        font-size: 45px;
+    }
+    .catImag{
+        width: 40%;
+        display: block;
+        margin: 0 auto;
+    }
+    .catArticle{
+        width: 310px;
+    }
+
+    /* Css catalogue chaudiere */
+    .catArticle1{
+        width: 310px;
+    }
+    .catImag1{
+        width: 40%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Css quinoussommes.html */
+    .galerie{
+        display: none;
+    }
+
+    /* contact */
+    .ligne{
+        width: 290px
+    }
+    /* Societe */
+    .nous{
+        font-size: 45px;
+        margin-top: 30px;
+        
+    }
+
+  
+ }
+
+
+
+
+
+
+@media (min-width: 375px) { 
+    .media{
+        display: block;
+    }
+ }
+
+@media (min-width: 410px) { 
+    
+ }
+
+
+@media (min-width: 576px) { 
+    
+ }
+
+
+@media (min-width: 768px) { 
+    
+ }
+
+
+@media (min-width: 992px) { 
+    .rf{
+        display: flex;
+    }
+ }
+
+
+@media (min-width: 1200px) {
+    /* header */
+    .a1{
+        font-size: 90px;
+        top: 80px;
+    }
+    .accroche{
+        font-size: 26px;
+        top: 180px;
+    }
+    .tt{
+        font-size: 40px;
+        padding: 60px;
+    }
+    .titreArticle{
+        font-size: 40px;
+        padding-top: 90px;
+    }
+    .log{
+        right: 50px;
+    }
+
+    /* ABC chauffage */
+
+
+    .g1,.g2,.g3,.g4{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 960px;
+        min-height: 300px;
+    }
+    .article{
+        width:1000px;
+    }
+    .imgArticle{
+        width:450px;
+    }
+    .media{
+        display: flex
+    }
+
+    /* divis fioul */
+
+    .live{
+        width: 500px;
+        margin-left: 40px;
+    }
+    hr{
+        width: 650px;
+    }
+    .titreFioul{
+        font-size: 80px;
+        padding: 50px;
+    }
+
+    .tt1{
+        font-size: 70px;
+        padding: 90px;
+    }
+    .forml{
+        padding: 50px;
+    }
+    /* catalogue */
+
+    .catTitre{
+        font-size: 45px;
+    }
+    .catImag, .catImag1{
+        width: 100% ;
+    }
+    .catArticle,.catArticle1{
+        width: 100%;
+    }
+    .catalogue{
+        width: 100%;
+    }
+    /* société */
+
+    .galerie{
+        display: flex;
+    }
+    /* contact */
+    .ligne{
+        width: 1100px
+    }
+
+    
+ }

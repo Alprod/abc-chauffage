@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./feuStyles/styles.css">
+  <link rel="stylesheet" href="./feuStyles/responsive.css">
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+  <script src="./bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  
+
+
+  <title>ABC Chauffage</title>
+
+  <style>
+  .teteFluid{
+  margin                 : 0;
+  padding                : 0;
+  background             : url(./images/plombier3.jpg) no-repeat center center;
+  -webkit-background-size: 550px cover;
+  -moz-background-size   : cover;
+  -o-background-size     : cover;
+  background-size        : cover;
+  background-position    : fixed;
+  backdrop-filter        : brightness(60%);
+  height                 : 750px;
+  }
+  .subCorp{
+    background-color: transparent;
+  }
+  .catTitre{
+    margin: 0;
+    color: #fff;
+    font-size: 70px;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+  .p1{
+    margin                 : 0;
+    padding-bottom         : 20px;
+    background-image: url(./images/fondCatPlomb.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+  }
+  
+  
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- -------------------- HEADER ----------------------- -->
+
+  <!-- ----------------- La barre de Navigation   ------------------- -->
+      <div class="container-fluid teteFluid">
+        <div class="contenu">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <button class="navbar-toggler Togg" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon Togg1"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse justify-content-md-center" id="navigation">
+                  <ul class="navbar-nav" id="navBarre"></ul>
+                </div>
+              </nav>
+        
+            </header>
+  <!-- --------------------  Titre + Slogan ----------------------- -->
+        <div class="container">
+          <h1 class="display-3 a1">ABC Chauffage</h1>
+          <p class="text-center lead accroche">
+            Depuis 1996, notre société met au service des professionnels et des particuliers son savoir-faire et son expertise 
+            dans des domaines d'activité varié et divers :
+            travaux de chauffage, de plomberie, de tout type de chaudiére,Implantée à Eragny, dans le département du Val d'oise,<br /> 
+            notre équipe vous propose des services de qualité.
+          </p>
+        </div>
+      </div>
+      </div>
+<!-- -------------------- Contenu du site ----------------------- -->
+
+
+
+
+<div class="ancre"></div>
+
+<div class="container-fluid corps p1">
+
+  <div class="container subCorp">
+    <h1 class="display-1 catTitre">Catalogue Plomberie</h1>
+
+    <div class="catalogue" id="catPlomberie"></div>
+
+  
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- -------------------- Footer + liens ----------------------- -->
+<div class="container-fluid piedPage">
+  <div class="row liens">
+    <div class="col-lg-4 col-md-4 col-sm-12 lien"><a href="intervention.html" class="lead">Besoin d'aide</a></div>
+    <div class="col-lg-4 col-md-4 col-sm-12 lien"><a href="contact.html" class="lead">Contactez-nous</a></div>
+    <div class="col-lg-4 col-md-4 col-sm-12 lien"><a href="devis.html" class="lead">Demande de Devis</a></div>
+  </div>
+  <footer class="container">
+      <div class="social">
+        <span><i class="fab fa-facebook-square"></i></span>
+        <span><i class="fab fa-instagram"></i></span>
+        <span><i class="fab fa-twitter"></i></span>
+      </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <article>
+            <address>
+              <p class="lead add">ABC Chauffage</p>
+              <p class="lead add">Allé de la Rose</p>
+              <p class="lead add">95610 Eragny sur Oise</p>
+              <p class="lead add">Tel: 01 34 48 56 23</p>
+              <a href="mailto:abcchauffage@contact.fr">abcchauffeur@contavt.fr</a>
+            </address>
+          </article>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <ul class="list-group list-group-flush flush1" id="listfoot"></ul>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <ul class="list-group list-group-flush flush2" id="lisfoot"></ul>
+        </div>
+    </div> 
+    <div class="row">
+        <p class="fin"> © Copyrigth 2019 - Germain alain </p> 
+        <p class="fin"> ® Tout droit Réserver</p>
+      </div> 
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">On Vous rappel</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Téléphone</label>
+                <input type="tel" class="form-control modalTel" id="modalTel" aria-describedby="modalHelp" pattern="(01|02|03|04|05|06|07|08|09)[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}" placeholder="Votre num">
+                <small id="modalHelp" class="form-text text-muted">Nous ne partagerons pas, votre numero de telephone.</small>
+              </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-amoi">Appeler</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rappel" id="rappel"><a href="#modal" data-toggle="modal" data-target="#modal">Rappel automatique</a></div>
+
+</div>
+
+  
+
+<script src="./Jscript/monQuery.js"></script>
+<script src="./Jscript/myScript.js"></script>
+<script src="./Jscript/catalogue.js"></script>
+
+
+<script>
+
+var idGet = document.getElementById('catPlomberie');
+
+var catArticlePlomb =  [{
+  //accessoire vidage
+  classes1: "sanitaire",
+  image1: "./abcImages/plomberie/sanitaire/accesoire_vidage.png",
+  alt1: "Accessoire vidage",
+  titreHcinq1: "ACCESSOIRE VIDAGE",
+  texteChaud1: "Tous les petits produits et accessoires afin que le vidage de votre lavabo fonctionne convenablement se trouve dans cette partie. Ici, vous pourrez retrouver de nombreux produits différents, tels que des                 chaînettes, des bouchons, des anneaux, des grilles ou encore des clapets. De quoi convenir au mieux à vos besoins. Toute une gamme de produits complémentaires au vidage des lavabos s'offre à vous ici.",
+  comHref1: "devisplomberie.html",
+  tarifChaud1: 9,
+  
+},
+{
+  //ACCESSOIRE RBM
+  classes1: "sanitaire",
+  image1: "./abcImages/plomberie/sanitaire/accessoir_RBM.png",
+  alt1: "ACCESSOIRE RBM",
+  titreHcinq1: "ACCESSOIRE RBM",
+  texteChaud1: "Ensuite sur Plomberie-Pro, nous vous proposons de découvrir une marque connue et reconnue dans le domaine du chauffage, avec les accessoires de marque RBM. Tout comme les accessoires de marque P-Pro, vous trouverez ici une multitude d'accessoires différents. Tous nos produits sont de qualité professionnelle. Attention, afin d'utiliser certains de ces accessoires, vous devrez vous procurer des raccords indispensables dans le cas d'un montage de kit monotube ou bitude.",
+  comHref1: "devisplomberie.html",
+  tarifChaud1: 35,
+  
+},
+{
+  //ACCESSOIRE P-Pro
+  classes1: "sanitaire",
+  image1: "./abcImages/plomberie/sanitaire/accessoireP-PRO.png",
+  alt1: "ACCESSOIRE P-PRO",
+  titreHcinq1: "ACCESSOIRE P-PRO",
+  texteChaud1: "Nous vous proposons dans un premier temps de découvrir les accessoires de marque P-Pro. Ces accessoires aux prix accessibles et de qualité professionnelle sauront convenir à vos radiateurs. Vous pourrez trouver plusieurs types d'accessoires différents : des robinets équerre, des robinets droit, des têtes thermostatique, des corps droits, et bien d'autres. Le tout disponible sous plusieurs dimensions différentes.",
+  comHref1: "devisplomberie.html",
+  tarifChaud1: 39,
+  
+},
+{
+  //Lave main
+  classes1: "sanitaire",
+  image1: "./abcImages/plomberie/sanitaire/lave_main.png",
+  alt1: "LAVE MAIN",
+  titreHcinq1: "LAVE MAIN",
+
+  texteChaud1:"En plus des vasques, pour équiper votre salle d'eau ou votre salle de bain, nous vous proposons de découvrir notre gamme de lavabos.Vous pourrez retrouver des lavabos à fixer au mur ainsi que d'autresà installer à l'aide d'une colonne spécialement adaptée à ces modèles - donc incompatibles avec d'autres modèles-. Nos lavabos sont soit de marque IdealStandard, soit de marque Allia. Vous pourrez retrouver des PDF à téléchager où vous pourrez retrouver les dimensions exactes des produits.Tout comme les vasques, nous vous proposons aussi deux lavabos spécialement conçus pour les personnes à mobilité réduite.",
+
+  comHref1: "devisplomberie.html",
+  tarifChaud1: 95,
+  
+},
+{
+  //VIDAGE DE LAVABO
+  classes1: "sanitaire",
+  image1: "./abcImages/plomberie/sanitaire/vidage_de_lavabo.png",
+  alt1: "VIDAGE DE LAVABO",
+  titreHcinq1: "VIDAGE DE LAVABO",
+  texteChaud1:"Tout le nécessaire pour le vidage dans votre installation de lavabo se trouve ici. Vous pourrez trouver ici une multitude de produits différents. Des bondes en PVC, en laiton ou chromées, des bondes à grille, des siphons, des tubulaires, des tirettes de vidage et une gamme d'accessoires divers joints, clapet, chape de liaison, rallonge, rosace pour rallonge..Pour vous proposer des produits de qualité, vous pourrez retrouver des marques telles que Valentin, Delabie, Wirquin, Nicoll, HansGrohe, et bien d'autres.",
+
+  comHref1: "devisplomberie.html",
+  tarifChaud1: 15,
+  
+},
+{
+  //MITIGEUR LAVE MAIN
+  classes1: "sanitaire",
+  image1: "./abcImages/plomberie/sanitaire/mitigeurs_sanitaire_lave_main.png",
+  alt1: "MITIGEUR LAVE MAIN",
+  titreHcinq1: "MITIGEUR LAVE MAIN",
+  texteChaud1:"Ici aussi, différents styles de mitigeurs pour lave-mains sont disponibles. De quoi correspondre à tous vos besoins ! Pour équiper votre lave-main, nous vous proposons toute une gamme de mitigeurs aux styles divers et variés. Que vous cherchiez un produit au style classique ou que vous vouliez opter pour un produit beaucoup plus moderne, vous trouverez le mitigeur qu'il vous faut sur notre site.Mitigeur classique, Mitigeur au design moderne, Grandes marques",
+
+  comHref1: "devisplomberie.html",
+  tarifChaud1: 85,
+  
+},
+{
+  //MITIGEUR VASQUE
+  classes1: "sanitaire",
+  image1: "./abcImages/plomberie/sanitaire/mitigeurs_sanitaire_vasque.png",
+  alt1: "MITIGEUR VASQUE",
+  titreHcinq1: "MITIGEUR VASQUE",
+  texteChaud1:"Même principe que la robinetterie pour lavabo, excepté que ces produits là sont spécialement conçus pour aller sur des vasques. Vous pourrez retrouver ici uniquement des mitigeurs qui disposent d'une longue colonne afin de s'adapter comme il se doit à la hauteur des vasques. Plusieurs designs sont disponibles afin de correspondre au mieux à vos goûts. Le choix Mitigeur langue-colonne, Design modernes et classiques, Grandes marques",
+
+  comHref1: "devisplomberie.html",
+  tarifChaud1: 145,
+  
+},
+{
+  //FIXATION POUR TUBE PER
+  classes1: "sanitaireChaudiere",
+  image1: "./abcImages/plomberie/sanitaire-chaudiere/TubeetraccordsPERGaine.png",
+  alt1: "FIXATION POUR TUBE PER",
+  titreHcinq1: "FIXATION POUR TUBE PER",
+  texteChaud1:"Pour finir, pour vous aider à réaliser convenablement l'installation de vos tubes PER, nous vous proposons de découvrir notre gamme de fixations spécialement conçues à cet effet. Fixer correctement vos installations vous évitera tout désagrément après la mise en place de vos tubes, et évitera tout risque inutile tout en garantissant une bonne durée de vie à votre installation. Vous pourrez trouver sur notre site des fixations simples ou doubles, des guides tubes, des sorties de dalles.",
+
+  comHref1: "devisplomberie.html",
+  tarifChaud1: 55,
+  
+},
+{
+  //TUBE PER NU B.A.O
+  classes1: "sanitairechaudiere",
+  image1: "./abcImages/plomberie/sanitaire-chaudiere/TubeetraccordsPERNUB.A.O.png",
+  alt1: "TUBE PER NU B.A.O",
+  titreHcinq1: "TUBE PER NU B.A.O",
+  texteChaud1:"Autre choix possible réaliser vos installations à l'aide de tube PER, nous vous proposons de découvrir notre gamme de tube PER gainé. Ces produits en plus de proposer les mêmes avantages que les tubes PER nus, sont préconisés pour les passages de cloisons, de murs ou de plafonds et peuvent être installés noyés dans une dalle pour une installation sanitaire. Ici aussi, vous pourrez retrouver différentes longueurs et diamètres différents afin de correspondre au mieux à votre situation. Ainsi, vous pourrez trouver des tubes allant de 12 à 25mm de diamètre pour des longueurs allant de 15 à 100m pour les plus longs. La majorité de nos produits sont de marque Somatherm afin de vous proposer le meilleur.",
+
+  comHref1: "devisplomberie.html",
+  tarifChaud1: 75,
+  
+},
+{
+  //RACCORD PER A Compression
+  classes1: "sanitairechaudiere",
+  image1: "./abcImages/plomberie/sanitaire-chaudiere/RaccordsPERettubesPERAcompression.png",
+  alt1: "RACCORD PER A Compression",
+  titreHcinq1: "RACCORD PER A Compression",
+  texteChaud1:"<p>Troisième choix possible pour vos raccords PER, nous vous proposons de découvrir notre gamme raccords PER à visser par compression. Leur principal avantage réside dans leur grande facilité de mise en place, que ce soit pour les monter ou les démonter, étant donné que vous n'aurez pas besoin d'outillage spécifique pour les utiliser.</p><p>Une simple clé suffit, et leur étanchéité est assurée par simple serrage de l'écrou à l'aide de la clé. Cela fait d'eux des raccords accessibles pour tout le monde, que vous soyez un particulier ou un professionnel.</p><p>Ils peuvent être utilisés à la fois en chauffage comme en plomberie, cela-dit ils devront rester accessibles, impossible donc de les installer dans les murs en plaque de plâtre.</p>",
+
+  comHref1: "devisplomberie.html",
+  tarifChaud1: 35,
+  
+},
+{
+  //RACCORD PER A glissement
+  classes1: "sanitairechaudiere",
+  image1: "./abcImages/plomberie/sanitaire-chaudiere/RaccordsPERettubesPERAsertir.png",
+  alt1: "RACCORD PER A glissement",
+  titreHcinq1: "RACCORD PER A glissement",
+  texteChaud1:"<p>Autre choix possible pour vos installations à l'aide de raccords PER, nous vous proposons de découvrir nos raccords PER à sertir. Ils vont proposer les mêmes avantages que les raccords PER à glissement, à savoir une grande facilité d'installation.</p><p>Une bonne résistance à la corrosion et ils permettent de réaliser un travail rapide et durable. Vous pourrez aussi les installés encastrés dans les murs en plaques de plâtre pour plus de discretion.</p><p>Cela dit, pour installer ces raccords vous aurez besoin d'une pince à sertir manuelle ou électrique, en fonction de vos besoins, disponibles sur notre site, ce qui rend leur utilisation un peu plus compliquée par rapport aux raccords à glissement, mais une fois le coup de main pris avec la pince ils restent très simples à installer. Ces raccords sont aussi certifiés CSTB.</p>",
+
+  comHref1: "devisplomberie.html",
+  tarifChaud1: 15,
+  
+},
+{
+  //RACCORD PER A GLISSEMENT PRO
+  classes1: "sanitairechaudiere",
+  image1: "./abcImages/plomberie/sanitaire-chaudiere/RaccordsPERettubesPERAglissementpro.png",
+  alt1: "RACCORD PER A GLISSEMENT PRO",
+  titreHcinq1: "RACCORD PER A GLISSEMENT PRO",
+  texteChaud1:"<p>Les raccords PER à glissement sont les raccords les plus simples à utiliser et parmis les plus fiables du marché. Ils permettent de réaliser un travail propre, rapide et durable pour vos installations. Ils proposent une grande résistance à la corrosion.</p><p>Sa mise en place se distingue des autres types de raccords PER par sa facilité, le simple glissement de la bague sur le tube suffit pour les installer. Ces raccords peuvent être utilisés enfermés dans les murs en cloison de plâtre ou en visible. Pour les installer, il ne vous faudra qu'une pince à glissement, trouvable sur notre site.</p><p>Ces raccords ont l'avantage d'être accessibles pour tout le monde, que vous soyez un particulier ou un professionnel. Leurs principaux avantages : ils sont faciles et rapides à monter, les pertes de charge sont moindres, ils ont une bonne résistance à la corrosion, et ils sont certifiés CSTB.</p>",
+
+  comHref1: "devisplomberie.html",
+  tarifChaud1: 20,
+  
+},
+];
+
+
+
+let constDivPlomb = "";
+for (let i = 0; i < catArticlePlomb.length; i++) {
+  const catPlomb = catArticlePlomb[i];
+ 
+  constDivPlomb += '<div class="card shadow-lg p-3 mb-5 bg-white rounded mb-3 mt-3 pb-3 catArticle1 ' + catPlomb.classes1 + '">';
+  constDivPlomb += '<div class="row no-gutters">';
+  constDivPlomb += '<div class="col-md-4">';
+  constDivPlomb += '<img src="' + catPlomb.image1 + '" class="card-img catImag1" alt="' + catPlomb.alt1 + '"> ';
+  constDivPlomb += '</div>';
+  constDivPlomb += '<div class="col-md-8">';
+  constDivPlomb += '<div class="card-body">';
+  constDivPlomb += '<h5 class="card-title">' + catPlomb.titreHcinq1 + '</h5>';
+  constDivPlomb += '<p class="card-text">' + catPlomb.texteChaud1 + '</p>';
+  constDivPlomb += '<h2 class="h2">'+catPlomb.tarifChaud1+' &#8364;</h2>';
+  constDivPlomb += '<button type="button" class="btn btn-light mt-2 valide"><a href="' + catPlomb.comHref1 + '">Commandez</a></button>';
+  constDivPlomb += '</div>';
+  constDivPlomb += '</div>';
+  constDivPlomb += '</div>';
+  constDivPlomb += '</div>';
+}
+
+idGet.innerHTML = constDivPlomb;
+
+
+
+
+</script>
+
+</body>
+</html>
